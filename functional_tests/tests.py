@@ -39,9 +39,6 @@ class NewVisitorTest(LiveServerTestCase):
 
        # When she hits enter, the page updates, and now the page lists
        # '1: Buy peacock feathers" as an item in a to-do list table
-       import time
-    
-       time.sleep(3)
        inputbox.send_keys(Keys.ENTER)
        edith_list_url = self.browser.current_url
        self.assertRegex(edith_list_url, '/lists/.+')
@@ -53,7 +50,6 @@ class NewVisitorTest(LiveServerTestCase):
        inputbox = self.browser.find_element_by_id('id_new_item')
        inputbox.send_keys('Use peacock feathers to make a fly')
 
-       time.sleep(3)
        inputbox.send_keys(Keys.ENTER)
  
        # The page updates again, and now shows both items on her list
