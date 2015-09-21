@@ -1,0 +1,14 @@
+new URL, view, and template to display lists
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#	modified:   lists/templates/home.html
+#	new file:   lists/templates/list.html
+#	modified:   lists/tests.py
+#	modified:   lists/views.py
+#	modified:   superlists/urls.py
+#
+# Untracked files:
+#	lists/views.py.save.1
+#
